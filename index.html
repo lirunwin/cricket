@@ -7,8 +7,1017 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/app.min.css" />
     <title>Document</title>
   </head>
 
-  <body></body>
+  <body>
+    <div id="app">
+      <nav
+        id="top-navbar"
+        class="navbar navbar-expand-lg fixed-top navbar-dark bg-rgba-dark py-0 pr-lg-2 flex-shrink-0 flex-grow-0"
+      >
+        <a class="navbar-brand py-0" href="#">
+          <img src="/images/logo.png" class="logo" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="text-light ml-auto">会员：hy002231 钻石：8888</div>
+
+          <ul class="navbar-nav ml-lg-4 align-items-center">
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                排行榜
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                点赞送报
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                钻石明细
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                联系客服
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                游戏规则
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                修改密码
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                赠送
+              </button>
+            </li>
+            <li class="nav-item m-lg-1">
+              <button
+                type="button"
+                class="btn btn-img bg-btn-primary text-light"
+              >
+                退出
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id="main-content" class="container px-0 d-flex flex-column">
+        <div class="row no-gutters flex-fill">
+          <div class="col-6 order-2 order-lg-1 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="d-flex flex-column h-100 pt-3">
+              <div id="red-pool" class="p-1 p-lg-2 pool">
+                <div class="bg-rgba-dark h-100 p-1 p-lg-2 d-flex flex-column">
+                  <div
+                    class="red-summary d-flex flex-column align-items-center justify-content-center text-light"
+                  >
+                    <span class="summary-title">红方</span>
+                    <div class="my-lg-3 summary-record">
+                      <span class="h6">重量：5.9厘</span>
+                      <span class="h6 pl-1 pl-lg-3">连胜：10</span>
+                    </div>
+                  </div>
+                  <div class="pool-list flex-fill d-flex flex-column">
+                    <div class="pool-list-head row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-danger text-light d-flex"
+                      >
+                        <div class="my-auto">开盆</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <span class="my-auto px-2">500</span>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-danger text-light d-flex"
+                      >
+                        <div class="my-auto">七折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-danger text-light d-flex"
+                      >
+                        <div class="my-auto">六折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-danger text-light d-flex"
+                      >
+                        <div class="my-auto">五折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-danger text-light d-flex"
+                      >
+                        <div class="my-auto">四折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="red-thumbs-up" class="thumbs-up pt-4">
+                <div class="w-100 h-100 p-1 p-lg-2">
+                  <div class="thumbs-up-bg w-100">
+                    <div class="thumbs-up-bg-container mx-auto">
+                      <span class="sr-only">红方点赞</span>
+                    </div>
+                  </div>
+                  <div class="row h-100 no-gutters pt-3 py-lg-4">
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-10 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-20 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-50 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-100 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-200 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-red-500 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 order-1 order-lg-2 col-lg-6 col-xl-8 col-xxl-8 px-1 px-md-2 px-lg-3 pt-lg-3 d-flex flex-column"
+          >
+            <div id="video-main" class="flex-shrink-0 flex-grow-0 w-100">
+              <div class="video-frame-container">
+                <div class="video-frame">
+                  <div class="d-flex flex-fill h-100">
+                    <video src="" class="w-100 h-100 "></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="video-msg" class="flex-fill pl-lg-3 d-flex ">
+              <div class="flex-fill row pt-3 no-gutters">
+                <div id="video-accent" class="col-4">
+                  <!-- #video-accent.col-5 is for temporary usage -->
+                  <div class="h-100 d-flex bg-darker">
+                    <div class="video-frame-container w-100 my-auto bg-darken">
+                      <div class="video-frame">
+                        <div class="d-flex flex-fill h-100">
+                          <video src="" class="w-100 h-100 "></video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row no-gutters h-100">
+                    <div class="col-5  px-lg-2 h-100">
+                      <div id="reward" class="d-flex h-100 flex-column">
+                        <h6
+                          class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0"
+                        >
+                          打赏
+                        </h6>
+                        <div
+                          class="flex-fill row align-items-center no-gutters"
+                        >
+                          <div class="col-auto text-danger pl-1 pl-lg-2">
+                            红草
+                          </div>
+                          <div class="col px-1 px-lg-2">
+                            <div class="row no-gutters">
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  -
+                                </button>
+                              </div>
+                              <div class="col">
+                                <input
+                                  type="number"
+                                  class="w-100 text-center"
+                                />
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto pr-1 pr-lg-2">
+                            <button class="btn btn-img bg-reward-red"></button>
+                          </div>
+                        </div>
+                        <div
+                          class="flex-fill row align-items-center no-gutters"
+                        >
+                          <div class="col-auto text-primary pl-1 pl-lg-2">
+                            蓝草
+                          </div>
+                          <div class="col px-1 px-lg-2">
+                            <div class="row no-gutters">
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  -
+                                </button>
+                              </div>
+                              <div class="col">
+                                <input
+                                  type="number"
+                                  class="w-100 text-center"
+                                />
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto pr-1 pr-lg-2">
+                            <button class="btn btn-img bg-reward-blue"></button>
+                          </div>
+                        </div>
+                        <div
+                          class="flex-fill row align-items-center no-gutters"
+                        >
+                          <div class="col-auto text-warning pl-1 pl-lg-2">
+                            监板
+                          </div>
+                          <div class="col px-1 px-lg-2">
+                            <div class="row no-gutters">
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  -
+                                </button>
+                              </div>
+                              <div class="col">
+                                <input
+                                  type="number"
+                                  class="w-100 text-center"
+                                />
+                              </div>
+                              <div class="col-auto">
+                                <button type="button" class="btn btn-custom">
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto pr-1 pr-lg-2">
+                            <button class="btn btn-img bg-reward-sys"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7 ">
+                      <div id="chatroom" class="d-flex h-100 flex-column">
+                        <h6
+                          class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0"
+                        >
+                          互动聊天
+                        </h6>
+                        <div
+                          class="chatroom-log flex-fill p-1 p-lg-2 bg-darker text-light h-100 font-weight-bold"
+                        >
+                          <div class="chatroom-sys text-muted">
+                            <span class="pr-1">[</span>用户a<span class="px-1"
+                              >]</span
+                            >进入房间
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势希望再接再厉，加油，打好局势希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势希望再接再厉，加油，打好局势希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col"
+                              >希望再接再厉，加油，打好局势</span
+                            >
+                          </div>
+                          <div
+                            class="chatroom-msg row no-gutters align-items-start"
+                          >
+                            <span class="chatroom-user col-auto pr-1 pr-lg-2"
+                              >用户1：</span
+                            >
+                            <span class="col">asjdklsa</span>
+                          </div>
+                        </div>
+                        <div class="chatroom-input p-1 p-lg-2 bg-darken">
+                          <div class="row no-gutters">
+                            <div class="col">
+                              <input type="text" class="w-100 px-2" />
+                            </div>
+                            <div class="col-auto">
+                              <button type="button" class="btn btn-custom py-0">
+                                发送
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 order-3 order-lg-3 col-lg-3 col-xl-2 col-xxl-2">
+            <div class="d-flex flex-column h-100 pt-3">
+              <div id="blue-pool" class="p-2 pool">
+                <div class="bg-rgba-dark h-100 p-1 p-lg-2 d-flex flex-column">
+                  <div
+                    class="blue-summary d-flex flex-column align-items-center justify-content-center text-light"
+                  >
+                    <span class="summary-title">蓝方</span>
+                    <div class="my-lg-3 summary-record">
+                      <span class="h6">重量：5.9厘</span>
+                      <span class="h6 pl-1 pl-lg-3">连胜：10</span>
+                    </div>
+                  </div>
+                  <div class="pool-list flex-fill d-flex flex-column">
+                    <div class="pool-list-head row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-primary text-light d-flex"
+                      >
+                        <div class="my-auto">开盆</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <span class="my-auto px-2">500</span>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-primary text-light d-flex"
+                      >
+                        <div class="my-auto">七折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-primary text-light d-flex"
+                      >
+                        <div class="my-auto">六折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-primary text-light d-flex"
+                      >
+                        <div class="my-auto">五折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pool-list-item row no-gutters">
+                      <div
+                        class="pool-list-name col-auto bg-primary text-light d-flex"
+                      >
+                        <div class="my-auto">四折</div>
+                      </div>
+                      <div class="pool-list-text col bg-white d-flex">
+                        <div class="row flex-column flex-fill no-gutters px-1">
+                          <div class="col border-bottom d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-catch"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col d-flex">
+                            <div class="row no-gutters w-100">
+                              <div class="col px-1 my-auto">12321</div>
+                              <div class="col-auto pool-list-action">
+                                <button
+                                  type="button"
+                                  class="btn btn-img bg-btn-release"
+                                ></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="blue-thumbs-up" class="thumbs-up pt-4">
+                <div class="w-100 h-100 p-1 p-lg-2">
+                  <div class="thumbs-up-bg w-100">
+                    <div class="thumbs-up-bg-container mx-auto">
+                      <span class="sr-only">红方点赞</span>
+                    </div>
+                  </div>
+                  <div class="row h-100 no-gutters pt-3 py-lg-4">
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-10 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-20 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-50 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-100 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-200 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                    <div
+                      class="col-6 d-flex align-items-center justify-content-center"
+                    >
+                      <div class="thumbs-up-action">
+                        <button
+                          type="button"
+                          class="btn btn-img bg-star-blue-500 my-auto"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="accent-centent" class="container px-0">
+        <div class="row no-gutters">
+          <div class="col-12 col-lg-6 col-xl-8 col-xxl-8 px-1 px-md-2 px-lg-3 mx-auto">
+            <div class="bg-darker px-lg-3">
+              <div class="py-1 py-lg-2 row">
+                <select name="" id="" class="col-auto">
+                  <option value="12321321">21321321321</option>
+                </select>
+                <span class="col-auto text-danger">红胜：<span class="text-grey">2局</span> </span>
+                <span class="col-auto text-primary">蓝胜：<span class="text-grey">2局</span> </span>
+                <span class="col-auto text-success">平局：<span class="text-grey">2局</span> </span>
+              </div>
+              <div class="row">
+                <div class="col">
+                <!-- 横向
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div class="bg-danger">1</div></div></div>
+                    <div class="col"><div><div class="bg-danger">2</div></div></div>
+                    <div class="col"><div><div class="bg-success">平</div></div></div>
+                    <div class="col"><div><div class="bg-danger">4</div></div></div>
+                    <div class="col"><div><div class="bg-danger">1</div></div></div>
+                    <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    <div class="col"><div><div class="bg-success">平</div></div></div>
+                    <div class="col"><div><div class="bg-primary">2</div></div></div>
+                  </div>
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                  </div>
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                  </div>
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                  </div>
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                  </div>
+                  <div class="row no-gutters ckt-grid">
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                    <div class="col"><div><div></div></div></div>
+                  </div> 
+                -->
+                <!-- 竖向 -->
+                  <div class="row no-gutters ckt-grid-vertical">
+                    <div class="col">
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-danger">2</div></div>
+                      <div><div class="bg-primary">3</div></div>
+                      <div><div class="bg-primary">4</div></div>
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-danger">6</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-danger">7</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-success">平</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                    </div>
+                    <div class="col">
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-success">平</div></div>
+                      <div><div class="bg-primary">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                      <div><div class="bg-danger">1</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      function videoAccentAutoWidth() {
+        var videoElement = document.querySelector('#video-accent')
+        var videoContaimer = videoElement.parentElement
+        console.log(videoContaimer)
+        var videoContaimerWidth = videoContaimer.clientWidth
+        var videoElementHeight = videoElement.clientHeight
+        var videoElementWidth =
+          ((videoElementHeight * 16) / 9 / videoContaimerWidth) * 100 + '%'
+        videoElement.style.maxWidth = videoElementWidth
+        videoElement.style.flex = '1 1 ' + videoElementWidth
+        videoElement.style['-ms-flex'] = '1 1 ' + videoElementWidth
+      }
+      // videoAccentAutoWidth()
+    </script>
+  </body>
 </html>

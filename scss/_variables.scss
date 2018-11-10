@@ -1,0 +1,33 @@
+$font-size-base: 0.875rem;
+$red: #b7171f;
+$blue: #1145ea;
+$yellow: #ff9008;
+$orange: #cc6600;
+
+$colors: (
+  'red': $red
+) !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1680px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px,
+  xxxl: 1550px
+);
+$bg-body: #17152a;
+$bg-body-dark: #0d0d19;
+$bg-body-darker: #0f111b;
+$bg-body-darken: #191e2f;
+$bg-rgba-dark: rgba(#000000, 0.6);
+$grey-text: #383b4a;
+$navbar-height: 58px;
