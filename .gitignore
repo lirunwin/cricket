@@ -24,3 +24,5 @@ temp
 */*.css.map
 
 scss/app.css
+
+js/*modal

@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
 
-  <body>
+  <body class="scroll">
     <div id="app">
       <nav
         id="top-navbar"
@@ -105,7 +105,7 @@
       </nav>
       <section id="main-content" class="container px-0 d-flex flex-column">
         <div class="row no-gutters flex-fill">
-          <div class="col-6 order-2 order-lg-1 col-lg-3 col-xl-2 col-xxl-2">
+          <div class="col-6 order-2 order-lg-1 col-lg-3 col-xl-2 col-xxl-2 pr-lg-2">
             <div class="d-flex flex-column h-100 pt-3">
               <div id="red-pool" class="p-1 p-lg-2 pool">
                 <div class="bg-rgba-dark h-100 p-1 p-lg-2 d-flex flex-column">
@@ -113,9 +113,9 @@
                     class="red-summary d-flex flex-column align-items-center justify-content-center text-light"
                   >
                     <span class="summary-title">红方</span>
-                    <div class="my-lg-3 summary-record">
+                    <div class="my-lg-2 summary-record">
                       <span class="h6">重量：5.9厘</span>
-                      <span class="h6 pl-1 pl-lg-3">连胜：10</span>
+                      <span class="h6 pl-1 pl-lg-2">连胜：10</span>
                     </div>
                   </div>
                   <div class="pool-list flex-fill d-flex flex-column">
@@ -133,7 +133,7 @@
                       <div
                         class="pool-list-name col-auto bg-danger text-light d-flex"
                       >
-                        <div class="my-auto">七折</div>
+                        <div class="my-auto">七扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -166,7 +166,7 @@
                       <div
                         class="pool-list-name col-auto bg-danger text-light d-flex"
                       >
-                        <div class="my-auto">六折</div>
+                        <div class="my-auto">六扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -199,7 +199,7 @@
                       <div
                         class="pool-list-name col-auto bg-danger text-light d-flex"
                       >
-                        <div class="my-auto">五折</div>
+                        <div class="my-auto">五扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -232,7 +232,7 @@
                       <div
                         class="pool-list-name col-auto bg-danger text-light d-flex"
                       >
-                        <div class="my-auto">四折</div>
+                        <div class="my-auto">四扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -271,7 +271,7 @@
                       <span class="sr-only">红方点赞</span>
                     </div>
                   </div>
-                  <div class="row h-100 no-gutters pt-3 py-lg-4">
+                  <div class="row h-100 no-gutters py-3 pt-lg-4 pb-lg-3">
                     <div
                       class="col-6 d-flex align-items-center justify-content-center"
                     >
@@ -338,7 +338,7 @@
             </div>
           </div>
           <div
-            class="col-12 order-1 order-lg-2 col-lg-6 col-xl-8 col-xxl-8 px-1 px-md-2 px-lg-3 pt-lg-3 d-flex flex-column"
+            class="col-12 order-1 order-lg-2 col-lg-6 col-xl-8 col-xxl-8 pt-lg-2 d-flex flex-column"
           >
             <div id="video-main" class="flex-shrink-0 flex-grow-0 w-100">
               <div class="video-frame-container">
@@ -351,7 +351,7 @@
             </div>
             <div id="video-msg" class="flex-fill pl-lg-3 d-flex ">
               <div class="flex-fill row pt-3 no-gutters">
-                <div id="video-accent" class="col-4">
+                <div id="video-accent" class="col-4 col-xxxxl-5">
                   <!-- #video-accent.col-5 is for temporary usage -->
                   <div class="h-100 d-flex bg-darker">
                     <div class="video-frame-container w-100 my-auto bg-darken">
@@ -365,7 +365,7 @@
                 </div>
                 <div class="col">
                   <div class="row no-gutters h-100">
-                    <div class="col-5  px-lg-2 h-100">
+                    <div class="col-6 col-xxxxl-5 px-lg-2 h-100">
                       <div id="reward" class="d-flex h-100 flex-column">
                         <h6
                           class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0"
@@ -464,7 +464,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-7 ">
+                    <div class="col">
                       <div id="chatroom" class="d-flex h-100 flex-column">
                         <h6
                           class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0"
@@ -472,7 +472,7 @@
                           互动聊天
                         </h6>
                         <div
-                          class="chatroom-log flex-fill p-1 p-lg-2 bg-darker text-light h-100 font-weight-bold"
+                          class="chatroom-log scroll flex-fill p-1 p-lg-2 bg-darker text-light h-100 font-weight-bold"
                         >
                           <div class="chatroom-sys text-muted">
                             <span class="pr-1">[</span>用户a<span class="px-1"
@@ -615,7 +615,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 order-3 order-lg-3 col-lg-3 col-xl-2 col-xxl-2">
+          <div class="col-6 order-3 order-lg-3 col-lg-3 col-xl-2 col-xxl-2 pl-lg-2">
             <div class="d-flex flex-column h-100 pt-3">
               <div id="blue-pool" class="p-2 pool">
                 <div class="bg-rgba-dark h-100 p-1 p-lg-2 d-flex flex-column">
@@ -623,9 +623,9 @@
                     class="blue-summary d-flex flex-column align-items-center justify-content-center text-light"
                   >
                     <span class="summary-title">蓝方</span>
-                    <div class="my-lg-3 summary-record">
+                    <div class="my-lg-2 summary-record">
                       <span class="h6">重量：5.9厘</span>
-                      <span class="h6 pl-1 pl-lg-3">连胜：10</span>
+                      <span class="h6 pl-1 pl-lg-2">连胜：10</span>
                     </div>
                   </div>
                   <div class="pool-list flex-fill d-flex flex-column">
@@ -643,7 +643,7 @@
                       <div
                         class="pool-list-name col-auto bg-primary text-light d-flex"
                       >
-                        <div class="my-auto">七折</div>
+                        <div class="my-auto">七扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -676,7 +676,7 @@
                       <div
                         class="pool-list-name col-auto bg-primary text-light d-flex"
                       >
-                        <div class="my-auto">六折</div>
+                        <div class="my-auto">六扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -709,7 +709,7 @@
                       <div
                         class="pool-list-name col-auto bg-primary text-light d-flex"
                       >
-                        <div class="my-auto">五折</div>
+                        <div class="my-auto">五扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -742,7 +742,7 @@
                       <div
                         class="pool-list-name col-auto bg-primary text-light d-flex"
                       >
-                        <div class="my-auto">四折</div>
+                        <div class="my-auto">四扣</div>
                       </div>
                       <div class="pool-list-text col bg-white d-flex">
                         <div class="row flex-column flex-fill no-gutters px-1">
@@ -781,7 +781,7 @@
                       <span class="sr-only">红方点赞</span>
                     </div>
                   </div>
-                  <div class="row h-100 no-gutters pt-3 py-lg-4">
+                  <div class="row h-100 no-gutters py-3 pt-lg-4 pb-lg-3">
                     <div
                       class="col-6 d-flex align-items-center justify-content-center"
                     >
@@ -852,81 +852,93 @@
 
       <section id="accent-centent" class="container px-0">
         <div class="row no-gutters">
-          <div class="col-12 col-lg-6 col-xl-8 col-xxl-8 px-1 px-md-2 px-lg-3 mx-auto">
-            <div class="bg-darker px-lg-3">
-              <div class="py-1 py-lg-2 row">
-                <select name="" id="" class="col-auto">
-                  <option value="12321321">21321321321</option>
-                </select>
+          <div class="col-12 col-lg-6 col-xl-8 col-xxl-8 mx-auto">
+            <div class="bg-darker px-2 px-lg-3 pb-2 pb-lg-3">
+              <div class="py-1 py-lg-2 px-2 px-lg-3 row d-flex align-items-center">
+                <!-- 
+                两个版本  select 和 div或其他
+                <select class="col-auto ckt-select">
+                  <option value="12321321">2018-06-01</option>
+                  <option value="12321321">2018-06-02</option>
+                  <option value="12321321">2018-06-03</option>
+                  <option value="12321321">2018-06-04</option>
+                </select> 
+                <span class="col-auto ckt-select caret">2018-06-01</span>
+                <i class="col-auto ckt-select caret">2018-06-01</i>
+                <input type="text" class="col-auto ckt-select" readonly size="10" value="2088-02-02">
+                -->
+                <div class="col-auto ckt-select caret">2018-06-01</div>
                 <span class="col-auto text-danger">红胜：<span class="text-grey">2局</span> </span>
                 <span class="col-auto text-primary">蓝胜：<span class="text-grey">2局</span> </span>
-                <span class="col-auto text-success">平局：<span class="text-grey">2局</span> </span>
+                <span class="col-auto text-success">局：<span class="text-grey">2局</span> </span>
               </div>
-              <div class="row">
+              <div class="row no-gutters">
                 <div class="col">
-                <!-- 横向
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div class="bg-danger">1</div></div></div>
-                    <div class="col"><div><div class="bg-danger">2</div></div></div>
-                    <div class="col"><div><div class="bg-success">平</div></div></div>
-                    <div class="col"><div><div class="bg-danger">4</div></div></div>
-                    <div class="col"><div><div class="bg-danger">1</div></div></div>
-                    <div class="col"><div><div class="bg-primary">2</div></div></div>
-                    <div class="col"><div><div class="bg-success">平</div></div></div>
-                    <div class="col"><div><div class="bg-primary">2</div></div></div>
-                  </div>
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                  </div>
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                  </div>
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                  </div>
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                  </div>
-                  <div class="row no-gutters ckt-grid">
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                    <div class="col"><div><div></div></div></div>
-                  </div> 
-                -->
-                <!-- 竖向 -->
+                <!-- 横向 -->                
+                  <!-- <div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div>
+                    <div class="row no-gutters ckt-grid">
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-danger">2</div></div></div>
+                      <div class="col"><div><div class="bg-success"></div></div></div>
+                      <div class="col"><div><div class="bg-danger">4</div></div></div>
+                      <div class="col"><div><div class="bg-danger">1</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                      <div class="col"><div><div class="bg-success">平</div></div></div>
+                      <div class="col"><div><div class="bg-primary">2</div></div></div>
+                    </div> 
+                  </div> -->
+               
+                <!-- 纵向 -->
                   <div class="row no-gutters ckt-grid-vertical">
                     <div class="col">
                       <div><div class="bg-danger">1</div></div>
@@ -994,29 +1006,164 @@
                     </div>
                   </div>
                 </div>
-                <div class="col"></div>
+                <div class="col pl-1 pl-lg-2">
+                  <div class="d-flex ckt-table p-1 p-lg-2 h-100">
+                    <table class="table text-light h-100">
+                      <tbody>
+                        <tr>
+                          <td style="width: calc(1 / 6 * 100% * 2)" colspan="2">场次： 35823</td>
+                          <td class="text-danger" style="width: calc(1 / 6 * 100%)">红方</td>
+                          <td class="text-primary" style="width: calc(1 / 6 * 100%)">蓝方</td>
+                          <td class="text-grey" style="width: calc(1 / 6 * 100%)">提出</td>
+                          <td class="text-grey" style="width: calc(1 / 6 * 100%)">状态有效</td>
+                        </tr>
+                        <tr>
+                          <td style="width: calc(1 / 6 * 100%)" rowspan="2">七扣</td>
+                          <td class="text-grey" style="width: calc(1 / 6 * 100%)">放</td>
+                          <td class="text-danger" style="width: calc(1 / 6 * 100%)">0</td>
+                          <td class="text-primary" style="width: calc(1 / 6 * 100%)">0</td>
+                          <td class="text-grey" style="width: calc(1 / 6 * 100%)">0</td>
+                          <td class="text-grey" style="width: calc(1 / 6 * 100%)">0</td>
+                        </tr>
+                        <tr>
+                          <td class="text-grey">接</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">六扣</td>
+                          <td class="text-grey">放</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td class="text-grey">接</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">五扣</td>
+                          <td class="text-grey">放</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td class="text-grey">接</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">四扣</td>
+                          <td class="text-grey">放</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                        <tr>
+                          <td class="text-grey">接</td>
+                          <td class="text-danger">0</td>
+                          <td class="text-primary">0</td>
+                          <td class="text-grey">0</td>
+                          <td class="text-grey">0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
+              <!-- 6 * 36  纵向 一个.col为1列，里面6个格子，总共36个.col  .bg-danger红色，.bg-primary蓝色，.bg-success绿色-->
+              <div class="mt-2">
+                <div class="row no-gutters ckt-grid-vertical"> 
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  <div class="col"><div><div class="bg-danger">1</div></div><div><div class="bg-danger">2</div></div><div><div class="bg-primary"></div></div><div><div class="bg-primary"></div></div><div><div class="bg-success"></div></div><div><div class="bg-danger">6</div></div></div>
+                  
+                </div>
+              </div>
+              <!-- 36 * 6  横向 一个.row为1行，一行里面有36个.col, 总共6个.row-->
+              <!-- <div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+                <div class="row no-gutters ckt-grid"><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div><div class="col"><div><div class="bg-danger">1</div></div></div><div class="col"><div><div class="bg-primary">3</div></div></div><div class="col"><div><div class="bg-success"></div></div></div><div class="col"><div><div class="bg-primary"></div></div></div><div class="col"><div><div class="bg-danger">2</div></div></div><div class="col"><div><div class="bg-success">1</div></div></div></div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
     </div>
+    <div id="popups">
+      <div class="popup">
+        
+      </div>
+    </div>
     <script src="/js/jquery-3.3.1.slim.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-      function videoAccentAutoWidth() {
-        var videoElement = document.querySelector('#video-accent')
-        var videoContaimer = videoElement.parentElement
-        console.log(videoContaimer)
-        var videoContaimerWidth = videoContaimer.clientWidth
-        var videoElementHeight = videoElement.clientHeight
-        var videoElementWidth =
-          ((videoElementHeight * 16) / 9 / videoContaimerWidth) * 100 + '%'
-        videoElement.style.maxWidth = videoElementWidth
-        videoElement.style.flex = '1 1 ' + videoElementWidth
-        videoElement.style['-ms-flex'] = '1 1 ' + videoElementWidth
-      }
+      // function videoAccentAutoWidth() {
+      //   var videoElement = document.querySelector('#video-accent')
+      //   var videoContaimer = videoElement.parentElement
+      //   console.log(videoContaimer)
+      //   var videoContaimerWidth = videoContaimer.clientWidth
+      //   var videoElementHeight = videoElement.clientHeight
+      //   var videoElementWidth =
+      //     ((videoElementHeight * 16) / 9 / videoContaimerWidth) * 100 + '%'
+      //   videoElement.style.maxWidth = videoElementWidth
+      //   videoElement.style.flex = '1 1 ' + videoElementWidth
+      //   videoElement.style['-ms-flex'] = '1 1 ' + videoElementWidth
+      // }
       // videoAccentAutoWidth()
     </script>
   </body>

@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+@include media-breakpoint-down(lg) {
+  html {
+    font-size: 0.875rem;
+  }
+}
+body {
+  background: $bg-body url(/images/bg.jpg) top center/cover no-repeat;
+  height: inherit;
+  width: inherit;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+textarea:focus,
+input:focus,
+button:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
