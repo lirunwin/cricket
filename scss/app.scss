@@ -1,9 +1,51 @@
 @import './variables';
-@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/buttons';
+
 @import './my_reboot';
 @import './css_sprites/css_sprit';
+@import './animation';
 @import './border';
 @import './public';
+
+#pageCheck {
+  background: url('/images/bg_page_check.png') center/100% 100% no-repeat;
+  width: 594px;
+  height: 194px;
+}
+#pageLogin {
+  background: url('/images/bg_page_login.png') center/100% 100% no-repeat;
+  width: 594px;
+  height: 290px;
+}
+#pageCheck,
+#pageLogin {
+  input:not([type='radio']) {
+    width: 100%;
+    padding: 0 0.5rem;
+    border: 0;
+    background: $white;
+  }
+  input:not([type='radio']),
+  button {
+    line-height: 3;
+  }
+  button {
+    border: 0;
+    width: 6rem;
+  }
+  img {
+    height: 42px;
+  }
+}
 
 #top-navbar {
   &.navbar {
@@ -186,6 +228,19 @@
       height: 100%;
       padding: calc(64.5 / 1100 * 100%) calc(18 / 1100 * 100%)
         calc(18 / 1100 * 100%) calc(18 / 1100 * 100%);
+      .game-setting {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 50%;
+        }
+      }
     }
   }
 }
@@ -237,6 +292,7 @@
     input,
     button {
       line-height: 2.25;
+      border: none;
     }
     button {
       min-width: 6rem;
@@ -248,15 +304,94 @@
   }
 }
 
-.popup {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(#000, 0.6);
-  z-index: 9999;
+#discountPopups {
+  > div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    &.active {
+      display: block;
+      @extend .animated;
+    }
+    > div {
+      transform: translate3d(-50%, -100%, 0);
+    }
+  }
+}
+.search-input {
+  input,
+  button {
+    border: none;
+    line-height: 2;
+  }
+  input {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  button {
+    min-width: 3rem;
+    background: $yellow;
+    border: 1px solid $yellow;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+#thumbsUpReport {
+  .ckt-table {
+    min-width: 820px;
+    max-height: 450px;
+  }
+}
+#thumbsUpDetail {
+  .ckt-table {
+    min-width: 500px;
+  }
+}
+#diamondReport {
+  .ckt-table {
+    min-width: 820px;
+    max-height: 450px;
+  }
+}
+#rules {
+  .rules {
+    width: 600px;
+    max-height: 450px;
+    overflow: auto;
+  }
+}
+#changePwd,
+#gift {
+  .modal-form {
+    width: 480px;
+    max-width: 100%;
+  }
+}
+#ranking {
+  .ranking-table {
+    min-width: 970px;
+    max-height: 75vh;
+  }
+}
+#gameSetting {
+  .setting-form {
+    min-width: 800px;
+    max-width: 75vh;
+  }
+  .setting-form-red {
+    border: 1px solid $danger;
+  }
+
+  .setting-form-blue {
+    border: 1px solid $primary;
+  }
+}
+#notice {
+  .modal-form {
+    min-width: 670px;
+  }
+}
+.close {
+  cursor: pointer;
 }

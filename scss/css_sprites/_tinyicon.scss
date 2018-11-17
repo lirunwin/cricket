@@ -1,29 +1,35 @@
-.bg-radio_off {
+.bg-rank-1 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/tinyicons.png') -10px -10px;
+}
+
+.bg-rank-3 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/tinyicons.png') -55px -10px;
+}
+
+.bg-rank-2 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/tinyicons.png') -100px -10px;
+}
+
+.bg-radio-off {
   width: 16px;
   height: 16px;
-  background: url('/images/tinyicon.png') -10px -57px;
+  background: url('/images/tinyicons.png') -55px -57px;
 }
 
-.bg-rank_3 {
-  width: 25px;
-  height: 27px;
-  background: url('/images/tinyicon.png') -10px -10px;
-}
-
-.bg-rank_1 {
-  width: 25px;
-  height: 27px;
-  background: url('/images/tinyicon.png') -55px -10px;
-}
-
-.bg-radio_on {
+.bg-radio-on {
   width: 16px;
   height: 16px;
-  background: url('/images/tinyicon.png') -46px -57px;
+  background: url('/images/tinyicons.png') -91px -57px;
 }
 
-.bg-rank_2 {
+.bg-tel {
   width: 25px;
-  height: 27px;
-  background: url('/images/tinyicon.png') -100px -10px;
+  height: 25px;
+  background: url('/images/tinyicons.png') -10px -57px;
 }

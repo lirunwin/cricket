@@ -11,7 +11,7 @@
     <title>Document</title>
   </head>
 
-  <body class="scroll">
+  <body class="scroll pr-2">
     <div id="app">
       <nav
         id="top-navbar"
@@ -144,6 +144,7 @@
                                 <button
                                   type="button"
                                   class="btn btn-img bg-btn-catch"
+                                  onclick="showDiscount('red', 7)"
                                 ></button>
                               </div>
                             </div>
@@ -346,6 +347,9 @@
                   <div class="d-flex flex-fill h-100">
                     <video src="" class="w-100 h-100 "></video>
                   </div>
+                  <div class="game-setting">
+                    <img src="/images/setting.png" alt="" onclick="cktModals.gameSetting.open()">
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,101 +371,91 @@
                   <div class="row no-gutters h-100">
                     <div class="col-6 col-xxxxl-5 px-lg-2 h-100">
                       <div id="reward" class="d-flex h-100 flex-column">
-                        <h6
-                          class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0"
-                        >
+                        <h6 class="ckt-title flex-shrink-0 flex-grow-0 font-weight-bold text-light p-2 mb-0">
                           打赏
                         </h6>
-                        <div
-                          class="flex-fill row align-items-center no-gutters"
-                        >
-                          <div class="col-auto text-danger pl-1 pl-lg-2">
-                            红草
-                          </div>
-                          <div class="col px-1 px-lg-2">
-                            <div class="row no-gutters">
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  -
-                                </button>
-                              </div>
-                              <div class="col">
-                                <input
-                                  type="number"
-                                  class="w-100 text-center"
-                                />
-                              </div>
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  +
-                                </button>
+                        <div class="d-flex h-100 flex-column">
+                          <div class="flex-fill row align-items-center no-gutters">
+                            <div class="col-auto text-danger pl-1 pl-lg-2">
+                              红草
+                            </div>
+                            <div class="col px-1 px-lg-2">
+                              <div class="row no-gutters">
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    -
+                                  </button>
+                                </div>
+                                <div class="col">
+                                  <input type="number" class="w-100 text-center" />
+                                </div>
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    +
+                                  </button>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-auto pr-1 pr-lg-2">
-                            <button class="btn btn-img bg-reward-red"></button>
-                          </div>
-                        </div>
-                        <div
-                          class="flex-fill row align-items-center no-gutters"
-                        >
-                          <div class="col-auto text-primary pl-1 pl-lg-2">
-                            蓝草
-                          </div>
-                          <div class="col px-1 px-lg-2">
-                            <div class="row no-gutters">
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  -
-                                </button>
-                              </div>
-                              <div class="col">
-                                <input
-                                  type="number"
-                                  class="w-100 text-center"
-                                />
-                              </div>
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  +
-                                </button>
-                              </div>
+                            <div class="col-auto pr-1 pr-lg-2">
+                              <button class="btn btn-img bg-reward-red"></button>
                             </div>
                           </div>
-                          <div class="col-auto pr-1 pr-lg-2">
-                            <button class="btn btn-img bg-reward-blue"></button>
-                          </div>
-                        </div>
-                        <div
-                          class="flex-fill row align-items-center no-gutters"
-                        >
-                          <div class="col-auto text-warning pl-1 pl-lg-2">
-                            监板
-                          </div>
-                          <div class="col px-1 px-lg-2">
-                            <div class="row no-gutters">
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  -
-                                </button>
-                              </div>
-                              <div class="col">
-                                <input
-                                  type="number"
-                                  class="w-100 text-center"
-                                />
-                              </div>
-                              <div class="col-auto">
-                                <button type="button" class="btn btn-custom">
-                                  +
-                                </button>
+                          <div class="flex-fill row align-items-center no-gutters">
+                            <div class="col-auto text-primary pl-1 pl-lg-2">
+                              蓝草
+                            </div>
+                            <div class="col px-1 px-lg-2">
+                              <div class="row no-gutters">
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    -
+                                  </button>
+                                </div>
+                                <div class="col">
+                                  <input type="number" class="w-100 text-center" />
+                                </div>
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    +
+                                  </button>
+                                </div>
                               </div>
                             </div>
+                            <div class="col-auto pr-1 pr-lg-2">
+                              <button class="btn btn-img bg-reward-blue"></button>
+                            </div>
                           </div>
-                          <div class="col-auto pr-1 pr-lg-2">
-                            <button class="btn btn-img bg-reward-sys"></button>
+                          <div class="flex-fill row align-items-center no-gutters">
+                            <div class="col-auto text-warning pl-1 pl-lg-2">
+                              监板
+                            </div>
+                            <div class="col px-1 px-lg-2">
+                              <div class="row no-gutters">
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    -
+                                  </button>
+                                </div>
+                                <div class="col">
+                                  <input type="number" class="w-100 text-center" />
+                                </div>
+                                <div class="col-auto">
+                                  <button type="button" class="btn btn-custom">
+                                    +
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto pr-1 pr-lg-2">
+                              <button class="btn btn-img bg-reward-sys"></button>
+                            </div>
                           </div>
                         </div>
+                        <!-- <div class="d-flex h-100 flex-column reward-admin bg-darker text-light font-weight-bold">
+                          <h5 class="bg-danger flex-fill mx-2 mt-2 d-flex align-items-center px-3">红草： 5000</h5>
+                          <h5 class="bg-primary flex-fill mx-2 mt-2 d-flex align-items-center px-3">蓝草： 5000</h5>
+                          <h5 class="bg-warning flex-fill mx-2 mt-2 d-flex align-items-center px-3">监板： 5000</h1>
+                        </div> -->
                       </div>
                     </div>
                     <div class="col">
@@ -654,6 +648,7 @@
                                 <button
                                   type="button"
                                   class="btn btn-img bg-btn-catch"
+                                  onclick="showDiscount('blue', 7)"
                                 ></button>
                               </div>
                             </div>
@@ -1144,27 +1139,1057 @@
       </section>
     </div>
     <div id="popups">
-      <div class="popup">
-        
+      <div id="discountPopups">
+        <div class="discount-red-70">
+          <div class="bg-discount-red-70"></div>
+        </div>
+        <div class="discount-red-60">
+          <div class="bg-discount-red-60"></div>
+        </div>
+        <div class="discount-red-50">
+          <div class="bg-discount-red-50"></div>
+        </div>
+        <div class="discount-red-40">
+          <div class="bg-discount-red-40"></div>
+        </div>
+        <div class="discount-blue-70">
+          <div class="bg-discount-blue-70"></div>
+        </div>
+        <div class="discount-blue-60">
+          <div class="bg-discount-blue-60"></div>
+        </div>
+        <div class="discount-blue-50">
+          <div class="bg-discount-blue-50"></div>
+        </div>
+        <div class="discount-blue-40">
+          <div class="bg-discount-blue-40"></div>
+        </div>
+      </div>
+      <div id="contestResultPopups">
+        <div id="contestRedWin" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+                <div class="bg-result-win-red mb-3"></div>
+                <div class="ckt-table p-2 mb-5 d-flex scroll">
+                  <table class="table text-light h-100">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td style="width: calc(1 / 6 * 100%)">双方</td>
+                        <td style="width: calc(1 / 6 * 100%)">阶段</td>
+                        <td style="width: calc(1 / 6 * 100%)">数量</td>
+                        <td style="width: calc(1 / 6 * 100%)">提出</td>
+                        <td style="width: calc(1 / 6 * 100%)">有效</td>
+                        <td style="width: calc(1 / 6 * 100%)">赚取</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>200000</td>
+                        <td>200000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="contestBlueWin" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+                <div class="bg-result-win-blue mb-3"></div>
+                <div class="ckt-table p-2 mb-5 d-flex scroll">
+                  <table class="table text-light h-100">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td style="width: calc(1 / 6 * 100%)">双方</td>
+                        <td style="width: calc(1 / 6 * 100%)">阶段</td>
+                        <td style="width: calc(1 / 6 * 100%)">数量</td>
+                        <td style="width: calc(1 / 6 * 100%)">提出</td>
+                        <td style="width: calc(1 / 6 * 100%)">有效</td>
+                        <td style="width: calc(1 / 6 * 100%)">赚取</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>200000</td>
+                        <td>200000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="contestEven" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+                <div class="bg-result-even mb-3"></div>
+                <div class="ckt-table p-2 mb-5 d-flex scroll">
+                  <table class="table text-light h-100">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td style="width: calc(1 / 6 * 100%)">双方</td>
+                        <td style="width: calc(1 / 6 * 100%)">阶段</td>
+                        <td style="width: calc(1 / 6 * 100%)">数量</td>
+                        <td style="width: calc(1 / 6 * 100%)">提出</td>
+                        <td style="width: calc(1 / 6 * 100%)">有效</td>
+                        <td style="width: calc(1 / 6 * 100%)">赚取</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-danger">红方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>200000</td>
+                        <td>200000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">蓝方</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reports">
+        <div id="thumbsUpReport" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-title row mx-0">
+                <div class="col p-3">点赞报表</div>
+                <button type="button" class="col-auto btn btn-close" onclick="cktModals.thumbsUpReport.close()"><span>&times;</span></button>
+              </div>
+              <div class="ckt-table p-2 mb-5 d-flex scroll flex-column">
+                <div class="pt-1 pb-2 pt-lg-2 pb-lg-3 row d-flex align-items-center w-100 mx-0">
+                  <div class="col-auto text-grey">开始时间：</div>
+                  <div class="col-auto ckt-select caret">2018-06-01</div>
+                  <div class="col-auto text-grey">结束时间：</div>
+                  <div class="col-auto ckt-select caret">2018-06-01</div>
+                  <div class="col-auto">
+                    <select class="ckt-select">
+                      <option value="12321321">比赛结果</option>
+                      <option value="12321321">2018-06-02</option>
+                      <option value="12321321">2018-06-03</option>
+                      <option value="12321321">2018-06-04</option>
+                    </select>
+                  </div>
+                  <div class="col-auto pl-0">
+                    <div class="row no-gutters search-input align-items-center">
+                      <div class="col">
+                        <input type="text" placeholder="场次ID" size="20" class="px-2">
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-custom py-0">搜索</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <table class="table text-light h-100">
+                  <tbody>
+                    <tr class="text-grey">
+                      <td>场次ID</td>
+                      <td>比赛结果</td>
+                      <td>总赞量</td>
+                      <td>退回</td>
+                      <td>有效</td>
+                      <td>结算</td>
+                      <td>比赛时间</td>
+                      <td>操作</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td class="text-success">和局</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2018-11-17 13:20</td>
+                      <td class="text-primary"><span class="ckt-table-action" onclick="cktModals.thumbsUpDetail.open()">明细</span></td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td class="text-danger">红胜</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td class="text-primary">蓝胜</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>200000</td>
+                      <td>200000</td>
+                      <td>200000</td>
+                      <td>200000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav class="mt-4 my-3">
+                  <ul class="ckt-pagination justify-content-center">
+                    <li class="ckt-page-item disabled">
+                      <span class="ckt-page-link first-page" href="#" tabindex="-1">&Lt; 第一页</a>
+                    </li>
+                    <li class="ckt-page-item"><span class="ckt-page-link">&lt;</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link active" href="#">1</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link" href="#">2</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link" href="#">3</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link">&gt;</span></li>
+                    <li class="ckt-page-item">
+                      <span class="ckt-page-link last-page" href="#">最后页 &Gt;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <div id="thumbsUpDetail" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-title row mx-0">
+                <div class="col p-3">点赞报表</div>
+                <button type="button" class="col-auto btn btn-close" onclick="cktModals.thumbsUpDetail.close()"><span>&times;</span></button>
+              </div>
+              <div class="ckt-table p-2 mb-5 d-flex scroll flex-column">
+                <table class="table text-light h-100">
+                  <tbody>
+                    <tr class="text-grey">
+                      <td>双方</td>
+                      <td>阶段</td>
+                      <td>数量</td>
+                      <td>提出</td>
+                      <td>有效</td>
+                      <td>点赞时间</td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">蓝方</td>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2018-11-17 13:20</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td class="text-danger">红方</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td class="text-primary">蓝胜</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>200000</td>
+                      <td>200000</td>
+                      <td>200000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="diamondReport" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-title row mx-0">
+                <div class="col p-3">钻石报表</div>
+                <button type="button" class="col-auto btn btn-close" onclick="cktModals.diamondReport.close()"><span>&times;</span></button>
+              </div>
+              <div class="ckt-table p-2 mb-5 d-flex scroll flex-column">
+                <div class="pt-1 pb-2 pt-lg-2 pb-lg-3 row d-flex align-items-center w-100 mx-0">
+                  <div class="col-auto text-grey">开始时间：</div>
+                  <div class="col-auto ckt-select caret">2018-06-01</div>
+                  <div class="col-auto text-grey">结束时间：</div>
+                  <div class="col-auto ckt-select caret">2018-06-01</div>
+                  <div class="col-auto">
+                    <select class="ckt-select">
+                      <option value="12321321">类型一</option>
+                      <option value="12321321">2018-06-02</option>
+                      <option value="12321321">2018-06-03</option>
+                      <option value="12321321">2018-06-04</option>
+                    </select>
+                  </div>
+                  <div class="col-auto pl-0">
+                    <select class="ckt-select">
+                      <option value="12321321">类型二</option>
+                      <option value="12321321">2018-06-02</option>
+                      <option value="12321321">2018-06-03</option>
+                      <option value="12321321">2018-06-04</option>
+                    </select>
+                  </div>
+                  <div class="col-auto pl-0 search-input">
+                    <button type="button" class="btn btn-custom py-0">搜索</button>
+                  </div>
+                </div>
+                <table class="table text-light h-100">
+                  <tbody>
+                    <tr class="text-grey">
+                      <td>数量</td>
+                      <td>类型</td>
+                      <td>时间</td>
+                      <td>说明</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2018-11-17 13:20</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>红胜</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>蓝胜</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>200000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>S123442</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                      <td>2000</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav class="mt-4 my-3">
+                  <ul class="ckt-pagination justify-content-center">
+                    <li class="ckt-page-item disabled">
+                      <span class="ckt-page-link first-page">&Lt; 第一页</span>
+                    </li>
+                    <li class="ckt-page-item"><span class="ckt-page-link">&lt;</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link active" href="#">1</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link" href="#">2</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link" href="#">3</span></li>
+                    <li class="ckt-page-item"><span class="ckt-page-link">&gt;</span></li>
+                    <li class="ckt-page-item">
+                      <span class="ckt-page-link last-page" href="#">最后页 &Gt;</span>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contactUs" class="ckt-modal">
+          <div class="modal-dialog animated">
+            <div class="modal-content">
+              <div class="modal-title row mx-0">
+                <div class="col p-3">联系客服</div>
+                <button type="button" class="col-auto btn btn-close" onclick="cktModals.contactUs.close()"><span>&times;</span></button>
+              </div>
+              <div class="px-5 pt-4 bg-darker">
+                <img src="/images/qrcode.png" alt="联系客服">
+                <div class="d-flex align-items-center text-light justify-content-center py-3">
+                  <div class="bg-tel"></div>
+                  <span class="pl-3">电话：18721095166</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rules" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <div class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">游戏规则</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.rules.close()"><span>&times;</span></button>
+            </div>
+            <div class="px-5 py-4 bg-darker rules scroll text-grey">
+              <ol class="m-0 p-0">
+                <li class="mb-3">参赛标准：双方虫在开斗之前的展示必须具备前草、边草和后草，既前草有牙、边草转动和后草转身。否则一概取消其参赛资格，本局判定和局。</li>
+                <li class="mb-3">称重配对：比赛开始前进行称重，然后随机按照体重进行配对。配对完成后严格按照循环制进行从小到大的比赛顺序进行比赛。</li>
+                <li class="mb-3">交口判定：双方草师在裁判下达停草指令后，双方虫达到比赛线后，由双方的虫自然寻斗，只要是牙碰到对方虫即为交口。</li>
+                <li class="mb-3">起叫：翅膀有动作为起叫。</li>
+                <li class="mb-3">单叫、双叫与双无：交口后，裁判读数内发生的单方起叫为单叫，双方起叫为双叫，双方都没有起叫为双无。</li>
+                <li class="mb-3">有牙与无牙：牙齿在牵草的作用下有开合动作视为有牙，否则为无牙。</li>
+                <li class="mb-3">跌分开：交口后，双方虫不在头对头的状态时视为跌分开，此时裁判进行读数。</li>
+                <li class="mb-3">驳头：虫有牙，但是领正状态下，草师一下草，虫的头呈现躲避状态时，为驳头。</li>
+                <li class="mb-3">无法领正：虫有牙，但是无法使虫的头对向对方的虫为无法领正。</li>
+                <li class="mb-3">强制性停草：虫出现两次驳头和两次无法领正时，这一方的虫直接进入下一格局。</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="changePwd" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <div class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">修改密码</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.changePwd.close()"><span>&times;</span></button>
+            </div>
+            <div class="px-5 py-4 bg-darken modal-form">
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">旧密码:</div>
+                <div class="col">
+                  <input type="password" size="20" placeholder="请输入旧密码">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">新密码:</div>
+                <div class="col">
+                  <input type="password" size="20" placeholder="请输入新密码">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">确认密码:</div>
+                <div class="col">
+                  <input type="password" size="20" placeholder="请确认密码">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label"></div>
+                <div class="col">
+                  <button type="button" class="btn btn-block btn-accent btn-custom p-0">确认</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gift" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <div class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">赠送钻石</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.gift.close()"><span>&times;</span></button>
+            </div>
+            <div class="px-5 py-4 bg-darken modal-form">
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">对方账户:</div>
+                <div class="col">
+                  <input type="text" size="20" placeholder="请输入对方账户">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">对方姓名:</div>
+                <div class="col">
+                  <input type="text" size="20" placeholder="请输入对方姓名">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label">钻石数量:</div>
+                <div class="col">
+                  <input type="number" size="20" placeholder="请输入钻石数量">
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters mb-3">
+                <div class="col-auto text-right pr-3 text-grey modal-form-label"></div>
+                <div class="col">
+                  <button type="button" class="btn btn-block btn-accent btn-custom p-0">确认</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ranking" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <div class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">排行榜</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.ranking.close()"><span>&times;</span></button>
+            </div>
+            <div class="row bg-darken no-gutters ranking-table scroll">
+              <div class="col-12">
+                <div class="bg-rank-today mx-auto my-4"></div>
+              </div>
+              <div class="col pr-3">
+                <div class="ckt-table p-2">
+                  <table class="table text-light">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td>排名</td>
+                        <td>用户名</td>
+                        <td>购买量</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-1 mx-auto"></div>
+                        </td>
+                        <td>S123442</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-2 mx-auto"></div>
+                        </td>
+                        <td>红方</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-3 mx-auto"></div>
+                        </td>
+                        <td>蓝胜</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col pl-3">
+                <div class="ckt-table p-2">
+                  <table class="table text-light">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td>排名</td>
+                        <td>用户名</td>
+                        <td>购买量</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-1 mx-auto"></div>
+                        </td>
+                        <td>S123442</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-2 mx-auto"></div>
+                        </td>
+                        <td>红方</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-3 mx-auto"></div>
+                        </td>
+                        <td>蓝胜</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="bg-rank-week mx-auto my-4"></div>
+              </div>
+              <div class="col pr-3">
+                <div class="ckt-table p-2">
+                  <table class="table text-light">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td>排名</td>
+                        <td>用户名</td>
+                        <td>购买量</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-1 mx-auto"></div>
+                        </td>
+                        <td>S123442</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-2 mx-auto"></div>
+                        </td>
+                        <td>红方</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-3 mx-auto"></div>
+                        </td>
+                        <td>蓝胜</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col pl-3">
+                <div class="ckt-table p-2">
+                  <table class="table text-light">
+                    <tbody>
+                      <tr class="text-grey">
+                        <td>排名</td>
+                        <td>用户名</td>
+                        <td>购买量</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-1 mx-auto"></div>
+                        </td>
+                        <td>S123442</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-2 mx-auto"></div>
+                        </td>
+                        <td>红方</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td class="p-0">
+                          <div class="bg-rank-3 mx-auto"></div>
+                        </td>
+                        <td>蓝胜</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gameSetting" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <form class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">排行榜</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.gameSetting.close()"><span>&times;</span></button>
+            </div>
+            <div class="setting-form scroll">
+              <div class="row bg-darken no-gutters px-2 px-lg-3 pt-2 pt-lg-3">
+                <div class="col pr-1 pb-1 pb-lg-2">
+                  <div class="setting-form-red p-1">
+                    <div class="p-lg-4 bg-darker">
+                      <h1 class="title text-danger mb-4 font-weight-bold">红方</h1>
+                      <div class="modal-form">
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">虫子编号</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">重量</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">连胜</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">红草编号</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">红草姓名</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col pl-1">
+                  <div class="setting-form-blue p-1">
+                    <div class="p-lg-4 bg-darker">
+    
+                      <h1 class="title text-primary mb-4 font-weight-bold">蓝方</h1>
+                      <div class="modal-form">
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">虫子编号</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">重量</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">连胜</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">红草编号</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                        <div class="row align-items-center no-gutters mb-3">
+                          <div class="col-auto text-right pr-3 text-grey modal-form-label">红草姓名</div>
+                          <div class="col">
+                            <input type="text" size="20">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 modal-form mt-2 mt-lg-4 mb-2 mb-lg-3">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col pr-lg-4">
+                      <div class="row align-items-center no-gutters mb-3">
+                        <div class="col-auto text-right pr-3 text-grey modal-form-label">监板编号</div>
+                        <div class="col">
+                          <input type="text" size="20">
+                        </div>
+                      </div>
+                      <div class="row align-items-center no-gutters mb-3">
+                        <div class="col-auto text-right pr-3 text-grey modal-form-label">监板姓名</div>
+                        <div class="col">
+                          <input type="text" size="20">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row align-items-center no-gutters mb-3">
+                        <div class="col pr-3">
+                          <button type="button" class="btn btn-block btn-accent btn-custom p-0">确认</button>
+                        </div>
+                        <div class="col pl-3">
+                          <button type="reset" class="btn btn-block bg-darker text-light btn-custom p-0">重置</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="notice" class="ckt-modal">
+        <div class="modal-dialog animated">
+          <div class="modal-content">
+            <div class="modal-title row mx-0">
+              <div class="col p-3">公共消息</div>
+              <button type="button" class="col-auto btn btn-close" onclick="cktModals.notice.close()"><span>&times;</span></button>
+            </div>
+            <div class="p-2 p-lg-3 modal-form bg-darken">
+              <textarea placeholder="请输入消息内容，200字以内" class="scroll p-3"></textarea>
+              <div class="d-flex align-items-center pt-2 pt-lg-3">
+                <span class="text-grey">状态：</span>
+                <div class="ckt-radio">
+                  <input id="radio-1" name="radio" type="radio" checked>
+                  <label for="radio-1" class="radio-label text-light">正常</label>
+                </div>
+                <div class="ckt-radio">
+                  <input id="radio-2" name="radio" type="radio">
+                  <label for="radio-2" class="radio-label text-light">停用</label>
+                </div>
+                <div class="flex-grow-1"></div>
+                <button type="button" class="btn w-25 btn-accent btn-custom p-0">确认</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+
+    <div class="d-flex">
+      <button onclick="showDiscount('red', 7)">红方7扣</button>
+      <button onclick="showDiscount('red', 6)">红方6扣</button>
+      <button onclick="showDiscount('red', 5)">红方5扣</button>
+      <button onclick="showDiscount('red', 4)">红方4扣</button>
+      <button onclick="showDiscount('blue', 7)">蓝方7扣</button>
+      <button onclick="showDiscount('blue', 6)">蓝方6扣</button>
+      <button onclick="showDiscount('blue', 5)">蓝方5扣</button>
+      <button onclick="showDiscount('blue', 4)">蓝方4扣</button>
+    </div>
+    <div class="d-flex">
+        <button id="showContestRedWin">红方胜利</button>
+        <button id="showContestBlueWin" onclick="cktModals.contestBlueWin.open()">蓝方胜利</button>
+        <button id="showContestEven" onclick="cktModals.contestEven.open()">平局</button>
+    </div>
+    <div class="d-flex">
+      <button onclick="cktModals.thumbsUpReport.open()">点赞报表</button>
+      <button onclick="cktModals.thumbsUpDetail.open()">点赞明细</button>
+      <button onclick="cktModals.diamondReport.open()">钻石报表</button>
+      <button onclick="cktModals.contactUs.open()">联系客服</button>
+      <button onclick="cktModals.rules.open()">游戏规则</button>
+      <button onclick="cktModals.changePwd.open()">修改密码</button>
+      <button onclick="cktModals.gift.open()">赠送钻石</button>
+      <button onclick="cktModals.ranking.open()">排行榜</button>
+      <button onclick="cktModals.gameSetting.open()">设置</button>
+      <button onclick="cktModals.notice.open()">公共消息</button>
+    </div>
+    <script src="/js/rmodal.min.js"></script>
+    <script src="/js/app.js"></script>
     <script>
-      // function videoAccentAutoWidth() {
-      //   var videoElement = document.querySelector('#video-accent')
-      //   var videoContaimer = videoElement.parentElement
-      //   console.log(videoContaimer)
-      //   var videoContaimerWidth = videoContaimer.clientWidth
-      //   var videoElementHeight = videoElement.clientHeight
-      //   var videoElementWidth =
-      //     ((videoElementHeight * 16) / 9 / videoContaimerWidth) * 100 + '%'
-      //   videoElement.style.maxWidth = videoElementWidth
-      //   videoElement.style.flex = '1 1 ' + videoElementWidth
-      //   videoElement.style['-ms-flex'] = '1 1 ' + videoElementWidth
-      // }
-      // videoAccentAutoWidth()
+      function showDiscount(team, discount, time) {
+        team = team || 'red', // 默认红队
+          discount = discount || 7, //默认7扣
+          time = time || 3000  //默认10秒
+        var discountPopups = document.getElementById('discountPopups')
+        hideAll()
+
+        var className = '.discount-' + team + '-' + discount + '0'
+        var popup = discountPopups.querySelector(className)
+        if (popup) {
+          if (team === 'red') {
+            popup.style.animationName = 'bounceInLeft'
+          } else {
+            popup.style.animationName = 'bounceInRight'
+          }
+          popup.classList.add('active')
+          var timer = setTimeout(function () {
+            popup.classList.remove('active')
+          }, time)
+        }
+
+        function hideAll() {
+          var children = discountPopups.children
+          for (var i = 0; i < children.length; i++) {
+            children[i].classList.remove('active')
+          }
+          if (timer) {
+            clearTimeout(timer)
+          }
+        }
+
+      }
     </script>
   </body>
 </html>
