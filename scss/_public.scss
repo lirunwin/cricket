@@ -23,6 +23,7 @@
 .btn-img,
 .btn-custom,
 .btn-close {
+  border: 0;
   &:active {
     transform: scale(0.985);
   }
@@ -32,6 +33,7 @@
   line-height: 2.25;
   border-radius: 0;
   color: $white;
+  border: 0;
 }
 .btn-close {
   line-height: 1;

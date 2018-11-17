@@ -1,4 +1,68 @@
-@import './tinyicon';
 @import './discount';
 @import './buttons';
-@import './rank_result';
+
+.bg-rank-today {
+  width: 159px;
+  height: 32px;
+  background: url('/images/css_sprites.png') -624px -312px;
+}
+.bg-thumb-up-blue {
+  width: 231px;
+  height: 58px;
+  background: url('/images/css_sprites.png') -624px -234px;
+}
+.bg-rank-week {
+  width: 157px;
+  height: 32px;
+  background: url('/images/css_sprites.png') -803px -312px;
+}
+.bg-result-win-blue {
+  width: 594px;
+  height: 204px;
+  background: url('/images/css_sprites.png') -10px -10px;
+}
+.bg-thumb-up-red {
+  width: 231px;
+  height: 58px;
+  background: url('/images/css_sprites.png') -875px -234px;
+}
+.bg-result-even {
+  width: 594px;
+  height: 204px;
+  background: url('/images/css_sprites.png') -10px -234px;
+}
+.bg-result-win-red {
+  width: 594px;
+  height: 204px;
+  background: url('/images/css_sprites.png') -624px -10px;
+}
+.bg-rank-1 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/css_sprites.png') -1126px -234px;
+}
+.bg-rank-2 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/css_sprites.png') -1171px -234px;
+}
+.bg-rank-3 {
+  width: 25px;
+  height: 27px;
+  background: url('/images/css_sprites.png') -980px -312px;
+}
+.bg-tel {
+  width: 25px;
+  height: 25px;
+  background: url('/images/css_sprites.png') -1025px -312px;
+}
+.bg-radio-off {
+  width: 16px;
+  height: 16px;
+  background: url('/images/css_sprites.png') -1070px -312px;
+}
+.bg-radio-on {
+  width: 16px;
+  height: 16px;
+  background: url('/images/css_sprites.png') -1106px -312px;
+}
