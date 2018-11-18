@@ -3,7 +3,15 @@ html {
   width: 100%;
   font-size: 1rem;
 }
-@include media-breakpoint-down(lg) {
+html {
+  font-size: 1rem;
+}
+@include media-breakpoint-down(xxl) {
+  html {
+    font-size: 0.75rem;
+  }
+}
+@include media-breakpoint-up(xxxl) {
   html {
     font-size: 0.875rem;
   }
@@ -12,8 +20,6 @@ body {
   background: $bg-body url(/images/bg.jpg) top center/cover no-repeat;
   height: inherit;
   width: inherit;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

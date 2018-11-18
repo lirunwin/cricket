@@ -51,7 +51,7 @@
   &.navbar {
     height: $navbar-height;
   }
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xxxl) {
     .logo {
       max-width: 14.7vw;
     }
@@ -59,15 +59,22 @@
       flex-wrap: wrap;
     }
   }
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xxxl) {
     .logo {
       max-width: 60vw;
     }
   }
+  .nav-user {
+    max-width: 14em;
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: bottom;
+  }
 }
 #main-content {
-  height: 100vh;
-  padding-top: $navbar-height;
+  // padding-top: $navbar-height;
+  // height: 100vh;
+  height: calc(100vh - #{$navbar-height});
 }
 #red-pool,
 #blue-pool {
