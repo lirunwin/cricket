@@ -6,8 +6,8 @@
 
 @import '../node_modules/bootstrap/scss/reboot';
 @import '../node_modules/bootstrap/scss/grid';
-@import '../node_modules/bootstrap/scss/utilities';
 @import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/utilities';
 @import '../node_modules/bootstrap/scss/buttons';
 
 @import './my_reboot';
@@ -137,7 +137,7 @@
     }
     .pool-list-head,
     .pool-list-item {
-      padding-top: 3%;
+      margin-top: 2%;
       line-height: 1;
     }
     .pool-list-name {
@@ -310,6 +310,7 @@
     top: 50%;
     left: 50%;
     display: none;
+    z-index: 1050;
     &.active {
       display: block;
       @extend .animated;

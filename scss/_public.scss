@@ -163,7 +163,8 @@
   background: $bg-body-darken;
   text-align: center;
   table {
-    margin-bottom: 0; // border: 1px solid $border-color;
+    margin-bottom: 0;
+    // border: 1px solid $border-color;
     th,
     td {
       border: 1px solid $border-color;
@@ -254,7 +255,7 @@
   width: 100vw;
   height: 100vh;
   background: rgba(#000, 0.6);
-  z-index: 9999;
+  z-index: 1040;
   display: none;
   overflow: hidden;
   outline: 0;

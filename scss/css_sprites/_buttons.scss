@@ -4,17 +4,19 @@
   background: url('/images/btn_primary.png') center center/cover no-repeat;
 }
 .bg-btn-catch {
-  background: url('/images/btn_catch.png') center center/cover no-repeat;
+  background: url('/images/btn_catch.png') center center/contain no-repeat;
 }
 
 .bg-btn-release {
-  background: url('/images/btn_release.png') center center/cover no-repeat;
+  background: url('/images/btn_release.png') center center/contain no-repeat;
 }
 .bg-btn-catch,
 .bg-btn-release {
   padding: 0;
-  width: 100%;
-  padding-top: 100%;
+  width: 90%;
+  padding-top: 90%;
+  margin: auto;
+  display: block;
 }
 
 .bg-reward-red {
